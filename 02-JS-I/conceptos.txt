@@ -1,0 +1,4 @@
+Variables: Una variable es un pequeño espacio en la memoria que se
+puede reusar, actualizar o simplemente dejarlo registrado. 
+
+Strings: 
