@@ -1,4 +1,6 @@
 Variables: Una variable es un pequeño espacio en la memoria que se
 puede reusar, actualizar o simplemente dejarlo registrado. 
 
-Strings: 
+String: Son espacios en la memoria exclusivamente para datos textuales, 
+hasta 16 caracteres o bits.
+
