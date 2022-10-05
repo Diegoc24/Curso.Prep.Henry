@@ -161,8 +161,8 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  var resto;
-  if(resto == 1){
+  var resto = num % 2;
+  if(resto != 0){
 
       return true;
 
@@ -312,6 +312,9 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+    var dolar = 1.2;
+    var cambio = euro * dolar;
+    return cambio;
   
 }
 
@@ -322,29 +325,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    function vocal(letra){
+    
 
-      if(letra == "a"){
+      if(letra == "a" | letra == "e" | letra == "i" | letra == "o" | letra == "u"){
 
           return "Es vocal";
 
-      }else if(letra == "e"){
-
-        return "Es vocal";
-
-    }else if(letra == "i"){
-
-      return "Es vocal";
-
-    }else if(letra == "o"){
-
-    return "Es vocal";
-
-    }else if(letra == "u"){
-
-    return "Es vocal";
-
-    }else if(letra.length > 1){
+      }else if(letra.length > 1){
 
       return "Dato incorrecto";
 
@@ -352,7 +339,7 @@ function esVocal(letra){
 
       return "Dato incorrecto";
 
-    }
+    
 
     }
 
