@@ -274,6 +274,27 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+
+  var numeroprimo = true;
+    for(i = 2; i < numero / 2; i++){
+
+      if(numero % i === 0){
+
+          return true;
+        numeroprimo = false;
+      }
+
+      if(numeroprimo){
+
+        return true;
+      }else{
+        return false;
+      }
+      
+
+    }
+
+
 }
 
 function esVerdadero(valor){
@@ -281,12 +302,25 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
+  if(valor == true){
+    return "Soy verdadero";
+  }else{
+    return "Soy falso";
+  }
+
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+
+  ffor (var i = 1; i < 10; i++) {
+
+    var resultado = i * 6;
+       var tabla = resultado[i];
+    return tabla;
+  }
   
 }
 
