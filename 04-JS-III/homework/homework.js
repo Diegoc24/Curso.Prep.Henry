@@ -281,7 +281,7 @@ function mayorACien(array) {
 
 
 }
-// probando
+
 
 
 function breakStatement(numero) {
@@ -292,6 +292,31 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+
+    var suma = numero;
+    var arraynum = [];
+
+    for(var i = 0; i < 10; i++){
+
+      suma = suma + 2;
+      if(suma === i){
+        break;
+      } else{
+        arraynum.push(suma);
+      }
+
+
+    }if(arraynum.length < 10){
+
+      return "Se interrumpió la ejecución";
+
+    }else{
+
+      return arraynum;
+
+    }
+
+
 }
 
 
@@ -302,6 +327,23 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+  var suma = numero;
+  var arrayn = [];
+
+  for(var i = 0; i < 10; i++){
+
+    if(i === 4){
+      continue;
+    }else{
+      suma = suma + 2;
+      arrayn.push(suma);
+    }
+
+
+  }
+  return arrayn;
+
 }
 
 
