@@ -64,13 +64,15 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var otro = [];
-  var nuevo = [];
-  nuevo = array.map(function(elemento){
+  
+ 
+  var nuevo = array.map(function(elemento){
     
-    otro = cb(nuevo);
-    return otro;
-  })
+    return cb(elemento);
+
+    
+  });
+  return nuevo;
   
 }
 
@@ -78,18 +80,13 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var nuevo = [];
-  array.forEach(function(ele, ind){
+ 
+  
+  return array.filter(function(ele){
 
-    if(ele != a){
-      nuevo.unshift(ele);
-      
-    }
+    return ele[0] === "a";
 
-  }, 0)
-  return nuevo;
-
-return  nuevo;
+  });
 }
 
 // No modificar nada debajo de esta línea
