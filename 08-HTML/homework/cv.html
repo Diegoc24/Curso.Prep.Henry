@@ -6,14 +6,49 @@
            
             border: 20px solid black;
             margin: 100px;
+            padding: 30px;
+            width: 1100px;
+            background-image: url("cv.jpg");
+            background-size: contain;
         }
+        #educacion {
+            text-align: center;
+        }
+        #exp {
+            text-align: center;
+        }
+        #ski{
+            text-align: center;
+        }
+        #hobbies{
+            text-align: center;
+        }#imagen{
+            border: 30px solid transparent;
+            width: 200px;
+            border-left: 60px solid transparent; 
+        }#h1{
+            
+            display: inline;
+            position: relative;
+            bottom: 120px;
+            left: 120px;
+            
+        }
+        
+        
     </style>
     <title>Curriculum Vitae</title>
 
 </head>
-<body>
-    <header><h1><p align="center">Curriculum Vitae: Diego Caruso </p></h1></header>
-    <article><table id="Descripcion">
+<body><table id="Descripcion">
+    <header>
+       <tr><td>
+        
+        <img id="imagen" src="foto.png" width="300""/><h1 id="h1">Curriculum Vitae: Diego Caruso </h1>
+    </td></tr>
+       
+    </header>
+    <article>
 
         <tr><td>
            <h2> Descripción Personal</h2>
@@ -21,13 +56,76 @@
         </tr>
         <tr> <td>
             <h3>Desde los 13 años fui emprendedor, trabaje en atención al publico durante mas de 3 años,
-                me dedique a la venta otros 2 años, trabaje mucho tiempo reparando computadoras, 
+                me dedique a la venta de autos otros 2 años, trabaje a los 16 años reparando computadoras, entre otras cosas 
                 soy una persona enfocada en el crecimiento personal y colectivo, con gran potencial dentro 
                 del mercado laboral.
             </h3>
         </td>
         </tr>
+        <tr>
+            <td>
+                <h2 id="educacion">Educacion</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 id="texted"><p>Primario Completo en Escuela Bernardino Rivadavia de la ciudad de San Luis, Argentina</p>
+                <p>Secundario Completo con Bachiller en Informatica en la escuela Bartolome Mitre de la Ciudad de San Luis, Argentina</p>
+                <p>Capacitacion propia en lenguajes como Html, Css y Javascript, cuando tenia 16 años</p></h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2 id="exp">Experiencias Laborales</h2>
+            </td>
+        </tr>
+        <tr> <td>
+                <h3>Mi primer trabajo fue a los 13 años vendiendo autos(mi papa venia autos).
+                Despues me dedique a los 16 años a la repacacion de computardoras.
+                A los 18 años me dedique a la carpinteria, me puse mi propia carpinteria.
+                A los 21 vendi la carpinteria y me puse un negocio de venta de bebidas.</h3>
+            </td></tr>  
+        <tr>
+            <td><h1 id="ski">Skills</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <h3> <li> Identificación de oportunidades y resolución de problemas </li>
+                    <li>Adaptación o flexibilidad</li>
+                    <li>Capacidad analítica, pensamiento crítico</li>
+                    <li>Productividad y capacidad para trabajar con rigor</li>
+                    <li>Desarrollo de ideas y capacidad para innovar</li>
+                    </h3>
+                </ul>
+                              
+            </td>
+        </tr>
+        <tr>
+            <td id="hobbies">
+               <h1> Hobbies </h1>
 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul><h3>
+                    <li>
+                        Leer.
+                    
+                    </li>
+                    <li>
+                        Reparar computadoras e impresoras.
+                    </li>
+                    <li>
+                        Particar y aprender mecanica vehicular.
+                    </li>
+                    <li>
+                        Hacer ejercicio y caminar.
+                    </li>
+                </ul></h3>
+            </td>
+        </tr>
     </table></article>
     
 </body>
